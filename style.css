@@ -163,13 +163,14 @@ nav .navbar .toggel-btn {
 /*  */
 
 .drop-menu {
-  display: none;
   position: absolute;
   right: 20px;
   width: 250px;
+  height: 0;
   border-radius: 20px;
   background: rgb(185, 219, 212);
   backdrop-filter: blur(15px);
+  overflow: hidden;
   transition: 0.4s height;
 }
 .drop-menu ul li {
@@ -180,12 +181,12 @@ nav .navbar .toggel-btn {
 }
 
 .drop-menu ul li a {
-  color: #222;
   font-weight: 600;
   text-transform: uppercase;
 }
 .drop-menu.open {
   display: block;
+  height: 400px;
 }
 /*  */
 @media (max-width: 650px) {
@@ -196,7 +197,7 @@ nav .navbar .toggel-btn {
     display: block;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .drop-menu {
     width: 90%;
     margin: auto;
