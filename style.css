@@ -196,7 +196,7 @@ nav .navbar .toggel-btn {
     display: block;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 450px) {
   .drop-menu {
     width: 90%;
     margin: auto;
